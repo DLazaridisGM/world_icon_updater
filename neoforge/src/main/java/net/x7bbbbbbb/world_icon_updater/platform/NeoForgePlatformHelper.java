@@ -1,8 +1,8 @@
 package net.x7bbbbbbb.world_icon_updater.platform;
 
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.x7bbbbbbb.world_icon_updater.platform.services.IPlatformHelper;
 import net.neoforged.fml.ModList;
-import net.neoforged.fml.loading.FMLLoader;
 
 public class NeoForgePlatformHelper implements IPlatformHelper {
 
@@ -21,6 +21,6 @@ public class NeoForgePlatformHelper implements IPlatformHelper {
     @Override
     public boolean isDevelopmentEnvironment() {
 
-        return !FMLLoader.isProduction();
+        return !FMLEnvironment.isProduction();
     }
 }

@@ -46,7 +46,7 @@ public class MinecraftMixin {
                 client.gameRenderer.setRenderHand(false);
                 client.gameRenderer.setRenderBlockOutline(false);
 
-                client.gameRenderer.renderLevel(DeltaTracker.ZERO);
+                client.gameRenderer.renderLevel();
 
                 client.gameRenderer.setRenderHand(true);
                 client.gameRenderer.setRenderBlockOutline(true);
